@@ -12,14 +12,3 @@ const apiKeys = {
   };
   
   export default apiKeys;
-
-//   // import firebaseConfig from "./FBConfig";      
-// // Initialize Firebase
-// if (!window.location.href.includes("localhost")) {
-//     const firebaseConfig = {
-     
-//     };
-//     firebase.initializeApp(firebaseConfig);
-//   } else {
-//     // firebase.initializeApp(firebaseConfig);
-//   }
