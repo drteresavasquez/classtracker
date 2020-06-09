@@ -11,7 +11,7 @@ const apiKeys = {
     }
   };
   
-//   export default apiKeys;
+  export default apiKeys;
 
 //   // import firebaseConfig from "./FBConfig";      
 // // Initialize Firebase
