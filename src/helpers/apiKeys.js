@@ -1,15 +1,25 @@
 const apiKeys = {
     firebaseConfig: {
-        apiKey: "AIzaSyBu9-iEJaX8ygFlOHMPB07f2HUkygL_ia4",
-        authDomain: "class-tracker-4f98f.firebaseapp.com",
-        databaseURL: "https://class-tracker-4f98f.firebaseio.com",
-        projectId: "class-tracker-4f98f",
-        storageBucket: "class-tracker-4f98f.appspot.com",
-        messagingSenderId: "82821346008",
-        appId: "1:82821346008:web:8df47224608c343e2d5dad",
-        measurementId: "G-PFH03NZVC9"
-    },
-    githubProxyUrl: 'https://classtracker-github-proxy.herokuapp.com',
+        apiKey: process.env.REACT_APP_PT_API_KEY,
+        authDomain: process.env.REACT_APP_PT_AUTH_DOMAIN,
+        databaseURL: process.env.REACT_APP_PT_DATABASE_URL,
+        projectId: process.env.REACT_APP_PT_PROJECT_ID,
+        storageBucket: process.env.REACT_APP_PT_STORAGE_BUCKET,
+        messagingSenderId: process.env.REACT_APP_PT_MESSAGING_SENDER_ID,
+        appId: process.env.REACT_APP_PT_APP_ID,
+        measurementId: process.env.REACT_APP_PT_MEASUREMENT_ID
+    }
   };
   
-  export default apiKeys;
+//   export default apiKeys;
+
+//   // import firebaseConfig from "./FBConfig";      
+// // Initialize Firebase
+// if (!window.location.href.includes("localhost")) {
+//     const firebaseConfig = {
+     
+//     };
+//     firebase.initializeApp(firebaseConfig);
+//   } else {
+//     // firebase.initializeApp(firebaseConfig);
+//   }
