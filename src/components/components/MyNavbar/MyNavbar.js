@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {
+  Button,
   Collapse,
   Navbar,
   NavbarToggler,
@@ -69,7 +70,7 @@ class MyNavbar extends React.Component {
               <NavLink tag={ Link } to='/assignments'>Assignments</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={this.logoutClickEvent}>Logout</NavLink>
+              <Button color="info" onClick={this.logoutClickEvent} >Logout</Button>
             </NavItem>
           </Nav>
         );
@@ -90,7 +91,7 @@ class MyNavbar extends React.Component {
               <NavLink tag={ Link } to='/assignments'>Assignments</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink onClick={this.logoutClickEvent}>Logout</NavLink>
+              <Button color="info" onClick={this.logoutClickEvent} >Logout</Button>
             </NavItem>
           </Nav>
         );
@@ -107,7 +108,7 @@ class MyNavbar extends React.Component {
             <NavLink tag={ Link } to='/assignments'>Assignments</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onClick={this.githubAuth}>Login</NavLink>
+            <Button color="warning" onClick={this.githubAuth}>Login</Button>
           </NavItem>
         </Nav>
       );
@@ -116,7 +117,7 @@ class MyNavbar extends React.Component {
     return (
       <div className="my-navbar">
       <Navbar color="dark" dark expand="md">
-          <NavbarBrand href="/">ClassTracker</NavbarBrand>
+        <NavbarBrand href="/"><img height="40px" src="ctlogo.png" /></NavbarBrand>
           <NavbarToggler onClick={e => this.toggle(e)} />
           <Collapse isOpen={this.state.isOpen} navbar>
             {buildNavbar()}
