@@ -1,7 +1,8 @@
 import axios from 'axios';
-import apiKeys from '../keys';
+import apiKeys from '../apiKeys';
+import Keys from './../Keys.js';
 
-const baseUrl = apiKeys.firebaseConfig.databaseURL;
+const baseUrl = !window.location.href.includes("localhost") ? apiKeys.firebaseConfig.databaseURL : Keys.firebaseConfig.databaseURL;
 
 const getAssignmentList = () => new Promise((resolve, reject) => {
   axios

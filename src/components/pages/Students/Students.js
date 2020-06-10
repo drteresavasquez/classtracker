@@ -1,9 +1,7 @@
 import _ from 'underscore';
-
 import React from 'react';
 
 import studentRequests from '../../../helpers/data/studentRequests';
-
 import GoodStudent from '../../components/GoodStudent/GoodStudent';
 import BadStudentTable from '../../components/BadStudentTable/BadStudentTable';
 
