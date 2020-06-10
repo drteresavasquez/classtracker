@@ -1,8 +1,7 @@
 import axios from 'axios';
-import apiKeys from '../apiKeys';
 import Keys from './../Keys.js';
 
-const baseUrl = !window.location.href.includes("localhost") ? apiKeys.githubProxyUrl : Keys.githubProxyUrl;
+const baseUrl = Keys.githubProxyUrl;
 
 const getRecentActivityRequest = githubUsername => new Promise((resolve, reject) => {
   axios

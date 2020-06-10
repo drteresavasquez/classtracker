@@ -1,5 +1,7 @@
 import axios from 'axios';
-import baseUrl from './apiJunts';
+import Keys from './../Keys';
+
+const baseUrl = Keys.firebaseConfig.databaseURL;
 
 const getAssignmentList = () => new Promise((resolve, reject) => {
   axios
