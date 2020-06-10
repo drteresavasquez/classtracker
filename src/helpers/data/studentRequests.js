@@ -21,7 +21,7 @@ const getRequest = () => new Promise((resolve, reject) => {
 
 const getSingleStudentByUid = uid => new Promise((resolve, reject) => {
   axios
-    .get(`${apiKeys.firebaseConfig.databaseURL}/students.json?orderBy="uid"&equalTo="${uid}"`)
+    .get(`${baseUrl}/students.json?orderBy="uid"&equalTo="${uid}"`)
     .then((res) => {
       const students = [];
       if (res.data !== null) {
@@ -37,7 +37,7 @@ const getSingleStudentByUid = uid => new Promise((resolve, reject) => {
 
 const getSingleStudentById = id => new Promise((resolve, reject) => {
   axios
-    .get(`${apiKeys.firebaseConfig.databaseURL}/students/${id}.json`)
+    .get(`${baseUrl}/students/${id}.json`)
     .then((res) => {
       let student = {};
       if (res.data !== null) {
@@ -50,7 +50,7 @@ const getSingleStudentById = id => new Promise((resolve, reject) => {
 
 const updateStudent = (id, student) => new Promise((resolve, reject) => {
   axios
-    .put(`${apiKeys.firebaseConfig.databaseURL}/students/${id}.json`, student)
+    .put(`${baseUrl}/students/${id}.json`, student)
     .then(res => resolve(res))
     .catch(err => reject(err));
 })
