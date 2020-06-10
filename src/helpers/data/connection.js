@@ -4,7 +4,6 @@ import Keys from './../Keys';
 
 const baseUrl = Keys.firebaseConfig;
 
-
 const firebaseApp = () => {
   if (!firebase.apps.length) {
     firebase.initializeApp(baseUrl);
