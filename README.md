@@ -1,5 +1,8 @@
 # ClassTracker
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c2531dd6-1763-4adb-9791-41d6d3aadc1b/deploy-status)](https://app.netlify.com/sites/classtracker/deploys)
+
+
 ### Description
 ClassTracker is used to help students stay up to date on their progress in the evening cohort coursework.
 
