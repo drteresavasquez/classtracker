@@ -58,6 +58,7 @@ export default apiKeys;
 - [Zoe Ames](https://github.com/zoeames)
 - [Lauren Rouse](https://github.com/rousell)
 - [Callan Morrison](https://github.com/morecallan)
+- [Dr. Teresa Vasquez](https://github.com/drteresavasquez)
 
 ### License
 [MIT](LICENSE)
